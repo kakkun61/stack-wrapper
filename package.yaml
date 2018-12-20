@@ -1,0 +1,22 @@
+name: unveil-stack
+version: 0.1.0.0
+github: "kakkun61/unveil-stack"
+license: BSD3
+author: "Kazuki Okamoto"
+maintainer: "kazuki.okamoto@kakkun61.com"
+copyright: "Kazuki Okamoto"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+description: Please see the README on GitHub at <https://github.com/kakkun61/unveil-stack#readme>
+
+dependencies:
+- base >= 4.7
+- filepath
+- process >= 1.2
+
+executables:
+  ghc:
+    main: ghc.hs
