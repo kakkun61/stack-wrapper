@@ -7,5 +7,5 @@ import System.Process
 main :: IO ()
 main = do
   args <- getArgs
-  cimpilerBin <- head . lines <$> readProcess "stack" ["path", "--compiler-bin"] ""
-  callProcess (cimpilerBin </> "ghc") args
+  compilerBin <- head . lines <$> readProcess "stack" ["path", "--compiler-bin"] ""
+  callProcess (compilerBin </> "ghc") args
