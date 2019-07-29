@@ -14,7 +14,6 @@ description: Please see the README on GitHub at <https://github.com/kakkun61/unv
 
 dependencies:
 - base >= 4.7
-- filepath
 - process >= 1.2
 
 executables:
