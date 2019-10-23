@@ -19,3 +19,6 @@ dependencies:
 executables:
   ghc:
     main: ghc.hs
+
+  exe:
+    main: exe.hs
