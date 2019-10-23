@@ -12,7 +12,7 @@ _ghc_ runs like:
 
 1. search a compiler under stack environment
 2. give the snapshot package DB to the compiler
-3. give the local pachage DB to the compiler
+3. give the local package DB to the compiler
 4. run the compiler
 
 ## exe
