@@ -16,9 +16,16 @@ dependencies:
 - base >= 4.7
 - process >= 1.2
 
+library:
+  source-dirs: src
+
 executables:
   ghc:
     main: ghc.hs
+    dependencies:
+    - unveil-stack
 
   exe:
     main: exe.hs
+    dependencies:
+    - unveil-stack

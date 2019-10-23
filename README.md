@@ -2,6 +2,8 @@
 
 This helps you when you are working with stack but developing tools don't support stack.
 
+To check a unveil-stack version, you give `--unveil-stack` as the first option to commands.
+
 This package creates 2 executable files.
 
 ## ghc
