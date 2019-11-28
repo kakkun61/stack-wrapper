@@ -1,6 +1,6 @@
-module UnveilStack (run) where
+module StackWrapper (run) where
 
-import Paths_unveil_stack (version)
+import Paths_stack_wrapper (version)
 
 import Data.Version (showVersion)
 import System.Environment (getArgs, getExecutablePath, lookupEnv, setEnv)
@@ -8,17 +8,17 @@ import System.Exit (exitFailure, exitSuccess)
 import System.IO (hPutStrLn, stderr)
 
 option :: String
-option = "--unveil-stack"
+option = "--stack-wrapper"
 
 callerEnv :: String
-callerEnv = "UNVEIL_STACK_CALLER"
+callerEnv = "STACK_WRAPPER_CALLER"
 
 run :: IO () -> IO ()
 run act = do
   args <- getArgs
   case args of
     a0:_ | a0 == option -> do
-      putStrLn $ "unveil-stack " <> showVersion version
+      putStrLn $ "stack-wrapper " <> showVersion version
       exitSuccess
     _ -> do
       this <- getExecutablePath

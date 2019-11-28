@@ -1,6 +1,6 @@
 module Main where
 
-import UnveilStack
+import StackWrapper
 
 import System.Environment
 import System.Process

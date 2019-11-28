@@ -1,6 +1,6 @@
-name: unveil-stack
+name: stack-wrapper
 version: 0.1.0
-github: "kakkun61/unveil-stack"
+github: "kakkun61/stack-wrapper"
 license: BSD3
 author: "Kazuki Okamoto"
 maintainer: "kazuki.okamoto@kakkun61.com"
@@ -10,7 +10,7 @@ extra-source-files:
 - README.md
 - ChangeLog.md
 
-description: Please see the README on GitHub at <https://github.com/kakkun61/unveil-stack#readme>
+description: Please see the README on GitHub at <https://github.com/kakkun61/stack-wrapper#readme>
 
 dependencies:
 - base >= 4.7
@@ -23,9 +23,9 @@ executables:
   ghc:
     main: ghc.hs
     dependencies:
-    - unveil-stack
+    - stack-wrapper
 
   exe:
     main: exe.hs
     dependencies:
-    - unveil-stack
+    - stack-wrapper

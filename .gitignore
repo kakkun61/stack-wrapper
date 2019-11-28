@@ -1,4 +1,4 @@
 .stack-work/
-unveil-stack.cabal
+stack-wrapper.cabal
 *~
 TAGS
