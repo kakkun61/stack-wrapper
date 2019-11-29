@@ -16,16 +16,23 @@ dependencies:
 - base >= 4.7
 - process >= 1.2
 
+when:
+- condition: os(windows)
+  dependencies:
+  - filepath
+
 library:
   source-dirs: src
-
+ 
 executables:
   ghc:
     main: ghc.hs
+    source-dirs: app
     dependencies:
     - stack-wrapper
 
   exe:
     main: exe.hs
+    source-dirs: app
     dependencies:
     - stack-wrapper
