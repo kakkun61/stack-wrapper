@@ -14,12 +14,8 @@ description: Please see the README on GitHub at <https://github.com/kakkun61/sta
 
 dependencies:
 - base >= 4.7
+- filepath
 - process >= 1.2
-
-when:
-- condition: os(windows)
-  dependencies:
-  - filepath
 
 library:
   source-dirs: src
@@ -27,6 +23,48 @@ library:
 executables:
   ghc:
     main: ghc.hs
+    source-dirs: app
+    dependencies:
+    - stack-wrapper
+
+  ghc-pkg:
+    main: ghc-pkg.hs
+    source-dirs: app
+    dependencies:
+    - stack-wrapper
+
+  ghci:
+    main: ghci.hs
+    source-dirs: app
+    dependencies:
+    - stack-wrapper
+
+  haddock:
+    main: haddock.hs
+    source-dirs: app
+    dependencies:
+    - stack-wrapper
+
+  hp2ps:
+    main: hp2ps.hs
+    source-dirs: app
+    dependencies:
+    - stack-wrapper
+
+  hsc2hs:
+    main: hsc2hs.hs
+    source-dirs: app
+    dependencies:
+    - stack-wrapper
+
+  runghc:
+    main: runghc.hs
+    source-dirs: app
+    dependencies:
+    - stack-wrapper
+
+  runhaskell:
+    main: runhaskell.hs
     source-dirs: app
     dependencies:
     - stack-wrapper
