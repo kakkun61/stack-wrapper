@@ -1,3 +1,5 @@
-# Changelog for unveil-stack
+# Changelog for stack-wrapper
 
-## Unreleased changes
+## 0.1.0
+
+The first release.

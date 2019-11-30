@@ -10,11 +10,12 @@ extra-source-files:
 - README.md
 - ChangeLog.md
 
-description: Please see the README on GitHub at <https://github.com/kakkun61/stack-wrapper#readme>
+synopsis: Call ghc within stack by calling ghc
+description: When you invoke ghc of stack-wrapper, you can invoke the appropriate one which specified by the resolver of stack.yaml.
 
 dependencies:
 - base >= 4.7
-- filepath
+- filepath >= 1.4
 - process >= 1.2
 
 library:
