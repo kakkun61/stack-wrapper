@@ -13,5 +13,5 @@ run name act = do
   case mdefaultDir of
     Just defaultDir ->
       callProcess (defaultDir </> name) args
-    Nothing -> do
+    Nothing ->
       act
