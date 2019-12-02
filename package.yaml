@@ -5,18 +5,22 @@ license: BSD3
 author: "Kazuki Okamoto"
 maintainer: "kazuki.okamoto@kakkun61.com"
 copyright: "Kazuki Okamoto"
+category: Development
+synopsis: Call ghc within stack by calling ghc
+description: When you invoke ghc of stack-wrapper, you can invoke the appropriate one which specified by the resolver of stack.yaml.
 
 extra-source-files:
 - README.md
 - ChangeLog.md
 
-synopsis: Call ghc within stack by calling ghc
-description: When you invoke ghc of stack-wrapper, you can invoke the appropriate one which specified by the resolver of stack.yaml.
-
 dependencies:
 - base >= 4.7
 - filepath >= 1.4
 - process >= 1.2
+
+ghc-options:
+- -Wall
+- -Wcompat
 
 library:
   source-dirs: src
