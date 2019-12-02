@@ -1,5 +1,7 @@
 # stack-wrapper
 
+[![Hackage](https://matrix.hackage.haskell.org/api/v2/packages/stack-wrapper/badge)](http://hackage.haskell.org/package/stack-wrapper)
+
 When you invoke `ghc` of stack-wrapper, you can invoke the appropriate one which specified by the resolver of _stack.yaml_.
 
 This helps you when you are working with stack but developing tools etc. don't support stack.
